@@ -1,7 +1,11 @@
 name: Publish image to Docker Hub
 
+# on:
+#   workflow_dispatch:
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - prime
 
 jobs:
   publish_image:
